@@ -18,7 +18,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://jobzee-tlrk.onrender.com/api/v1/user/login",
+        "https://zobzee.onrender.com/api/v1/user/login",
         { email, password, role },
         {
           headers: {

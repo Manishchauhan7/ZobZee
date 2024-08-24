@@ -12,7 +12,7 @@ const JobDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`https://jobzee-tlrk.onrender.com/api/v1/job/${id}`, {
+      .get(`https://zobzee.onrender.com/api/v1/job/${id}`, {
         withCredentials: true,
       })
       .then((res) => {

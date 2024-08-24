@@ -17,7 +17,7 @@ const MyJobs = () => {
     const fetchJobs = async () => {
       try {
         const { data } = await axios.get(
-          "https://jobzee-tlrk.onrender.com/api/v1/job/getmyjobs",
+          "https://zobzee.onrender.com/api/v1/job/getmyjobs",
           { withCredentials: true }
         );
         setMyJobs(data.myJobs);
@@ -48,7 +48,7 @@ const MyJobs = () => {
     const updatedJob = myJobs.find((job) => job._id === jobId);
     await axios
       .put(
-        `https://jobzee-tlrk.onrender.com/api/v1/job/update/${jobId}`,
+        `https://zobzee.onrender.com/api/v1/job/update/${jobId}`,
         updatedJob,
         {
           withCredentials: true,
@@ -66,7 +66,7 @@ const MyJobs = () => {
   //Function For Deleting Job
   const handleDeleteJob = async (jobId) => {
     await axios
-      .delete(`https://jobzee-tlrk.onrender.com/api/v1/job/delete/${jobId}`, {
+      .delete(`https://zobzee.onrender.com/api/v1/job/delete/${jobId}`, {
         withCredentials: true,
       })
       .then((res) => {

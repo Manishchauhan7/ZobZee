@@ -23,7 +23,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "https://jobzee-tlrk.onrender.com/api/v1/user/getuser",
+          "https://zobzee.onrender.com/api/v1/user/getuser",
           {
             withCredentials: true,
           }
@@ -34,7 +34,7 @@ const App = () => {
         setIsAuthorized(false);
       }
     };
-    // fetchUser();
+    fetchUser();
   }, [isAuthorized]);
 
   return (
